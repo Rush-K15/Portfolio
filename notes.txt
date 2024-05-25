@@ -1,0 +1,144 @@
+4/5/2024
+
+SETUP:
+
+Whenever we build a full stack app as client and backend as server.
+To create frontend client in react use cmd in folder:
+->npx create-react-app client
+where client is react project name.
+
+To run react app go to client folder and use cmd:
+->npm start
+
+Clear everything unnecesarry which comes built in with react.
+
+Change title from index.html to your name.
+
+********************************************************************************
+
+Tailwind CSS :
+->Utility framework just like bootsrap but with more number of classes.
+
+go to official website and follow setup steps for framework react.
+
+***************************************************************
+Router:
+
+install react router with cmd:
+->npm i react-router-dom
+
+Create components and pages folder in src
+
+inside pages create a home folder and index.js file in home.
+create header.jsx in components.
+
+NOTE: reason header in components is we create those files in components which help
+in code reusability.
+
+implement Browser router in App.js and route to Home.
+
+**************************************************************************
+
+Header :
+Flex the main returning div
+Create 3 h1 tags give them diff colors.
+
+(import new fonts from google fonts and paste and the import url in index.css and give css code in *
+body to apply throughout the project.[Code written in star gets applied everywhere.])
+
+****************************************************************************
+
+Sections:
+Create sectiontitle component which will recieve title as a props.
+
+Create different sections in pages eg.About
+
+Animations:
+Get desired animations from lotte animations.
+copy the embed htl script code and paste it in the index.html
+then copy the element code andput in the file u want
+
+Put all the skills in an array in a function.
+eg. const skills = [a,b,c]
+
+Then map every skill to h1 to display them.
+
+**************************************************************************************
+
+Responsive:
+
+Go to tailwind breakpoints and find out max-width breakpoints.
+paste the screens object in theme.
+creating mobile view and desktop view only for this project
+sm- mobile devices , wite css for mobile view using sm:
+lg - large devices , default css gets applied to lg
+
+***************************************************************************
+ScrollBar:
+
+Copy custom ScrollBar code from goggle and paste it in index.css
+Change colors and width of scrollbar accordingly.
+
+*************************************************************************
+icons :
+For social media icon i used remix icons 
+(advantage is no need to install any npm package)
+
+1.search remix icons on google
+2.click get started , copy cdn link
+3.paste in head of index.html
+
+********************************************************
+
+Loader:
+
+While loading we shouldnt display the blank pages
+so creating an animation for it.
+
+***************************************************
+static hosting
+
+go to firebase , create a project
+install firebase tools with with commands in cmd
+
+***********************************************************************
+
+BACKEND SETUP 
+
+->Go to main directory and run = npm init
+
+install dependicies with command 
+npm i 
+express - routing in backend
+mongoose - database operations
+dotenv - secured credentials
+nodemon - restart the server whenever changes are made in code.
+automatically gets restarted upon pressing ctrl + s.
+
+
+Create entry point for backend with new folder called
+server.js in root directory
+
+setup express and nodeserver in it and run by 
+nodemon server.
+
+create a new database in mongodbAtlas.com and copy compass connection url 
+create an .env file in root folder 
+create a variable mongo_url : and paste the url here
+
+*************************************************
+MONGOOSE:
+
+create a config folder in root directory
+inside it create dbConfig.js file and here we will write 
+the code to connect database and backend server using
+mongoose library.
+
+********************************************************
+Express Router:
+
+Express router handles requests for retrieving data. 
+
+
+collection name = pural 
+model name = singular
